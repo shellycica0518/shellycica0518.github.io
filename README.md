@@ -1,1 +1,0 @@
-# shellycica0518.github.io
