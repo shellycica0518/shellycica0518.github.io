@@ -12,4 +12,4 @@
         <a id="vizsga" href="https://shellycica0518.github.io/pecsi-rozsa-egyesulet" target="_blank"> <div><p> <b>Vizsgamunka: Pécsi Rózsa Egyesület</b></p></div></a>
    </div>
 </body>
-</html
+</html>
