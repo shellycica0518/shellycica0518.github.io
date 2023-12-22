@@ -8,8 +8,8 @@
 <body>
     <h1>Seymen Nurgül</h1>
    <div>
-       <a id="gyak1" href="https://shellycica0518.github.io/gyak1/" target="_blank"> <div><p> <b>Botanikus kert</b></p></div></a>
-        <a id="vizsga" href="https://shellycica0518.github.io/vizsga/" target="_blank"> <div><p> <b>Vizsgamunka: Pécsi Rózsa Egyesület</b></p></div></a>
+       <a id="gyak1" href="https://shellycica0518.github.io/gyak1" target="_blank"> <div><p> <b>Botanikus kert</b></p></div></a>
+        <a id="vizsga" href="https://shellycica0518.github.io/vizsga" target="_blank"> <div><p> <b>Vizsgamunka: Pécsi Rózsa Egyesület</b></p></div></a>
    </div>
 </body>
 </html
