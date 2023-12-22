@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
-    <title>Seymen Nurgül</title>
 </head>
 <body>
+    <h1>Seymen Nurgül</h1>
    <div>
-       <a id="gyak1" href="https://shellycica0518.io/botanikuskert_seymen_nuri" target="_blank"> <div><p> <b>Botanikus kert</b></p></div></a>
-        <a id="vizsga" href="https://shellycica0518.io/pecsi-rozsa-egyesulet" target="_blank"> <div><p> <b>Vizsgamunka: Pécsi Rózsa Egyesület</b></p></div></a>
+       <a id="gyak1" href="https://github.com/shellycica0518/shellycica0518.github.io/tree/main/botanikuskert_seymen_nuri" target="_blank"> <div><p> <b>Botanikus kert</b></p></div></a>
+        <a id="vizsga" href="https://github.com/shellycica0518/shellycica0518.github.io/tree/main/pecsi-rozsa-egyesulet" target="_blank"> <div><p> <b>Vizsgamunka: Pécsi Rózsa Egyesület</b></p></div></a>
    </div>
 </body>
 </html>
