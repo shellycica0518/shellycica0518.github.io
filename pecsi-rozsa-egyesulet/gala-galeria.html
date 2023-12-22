@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pécsi Rózsa Egyesület algaléria-Pécsi Rózsa Táncgála - tevékenységünk képekben</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="menu-icon">&#9776;</div>
+      <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="rolunk.html">Rólunk</a>
+        <h1>
+          <div>Pécsi Rózsa </div>
+          <div>Keleti Kultúra és Tánc Egyesület</div>
+        </h1>
+        <a href="galeria.html">Galéria</a>
+        <a href="#kapcsolat">Kapcsolat</a>
+      </nav>
+    </header>
+    <script>
+      $(document).ready(function () {
+    $(".menu-icon").click(function () {
+      $("nav").toggle();
+    });
+  });
+  </script>
+<div class="gallery-container">
+  <img src="img/pecsi-rozsa-plakat-2022.jpg" alt="Kép 1" class="gallery-image" data-large="img/pecsi-rozsa-plakat-2022.jpg">
+  <img src="img/pecsi-rozsa-plakat-2023.jpg" alt="Kép 2" class="gallery-image" data-large="img/pecsi-rozsa-plakat-2023.jpg">
+  <img src="img/pecsi-rozsa-gala3.jpg" alt="Kép 3" class="gallery-image" data-large="img/pecsi-rozsa-gala3.jpg">
+  <img src="img/pecsi-rozsa-gala4.jpg" alt="Kép 4" class="gallery-image" data-large="img/pecsi-rozsa-gala4.jpg">
+  <img src="img/pecsi-rozsa-gala5.jpg" alt="Kép 5" class="gallery-image" data-large="img/pecsi-rozsa-gala5.jpg">
+  <img src="img/pecsi-rozsa-gala6.jpg" alt="Kép 6" class="gallery-image" data-large="img/pecsi-rozsa-gala6.jpg">
+  <img src="img/pecsi-rozsa-gala7.jpg" alt="Kép 3" class="gallery-image" data-large="img/pecsi-rozsa-gala7.jpg">
+  <img src="img/pecsi-rozsa-gala8.jpg" alt="Kép 4" class="gallery-image" data-large="img/pecsi-rozsa-gala8.jpg">
+  <img src="img/pecsi-rozsa-gala9.jpg" alt="Kép 5" class="gallery-image" data-large="img/pecsi-rozsa-gala9.jpg">
+  <img src="img/pecsi-rozsa-gala10.jpg" alt="Kép 6" class="gallery-image" data-large="img/pecsi-rozsa-gala10.jpg">
+  <img src="img/pecsi-rozsa-gala11.jpg" alt="Kép 6" class="gallery-image" data-large="img/pecsi-rozsa-gala11.jpg">
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <img id="modal-image" src="" alt="Nagy méretű kép">
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+  // Kattintás esemény a képekre
+  $('.gallery-image').click(function() {
+    // Nagy kép beállítása és modális ablak megjelenítése
+    $('#modal-image').attr('src', $(this).data('large'));
+    $('#myModal').fadeIn();
+  });
+  // Bezáró gomb és modális háttér kattintás eseménye
+  $('.close, #myModal').click(function() {
+    $('#myModal').fadeOut();
+  });
+  // Megakadályozza a modális kép kattintását, hogy bezárja a modális ablakot
+  $('#modal-image').click(function(event) {
+    event.stopPropagation();
+  });
+});
+</script>
+</body>
+</html>

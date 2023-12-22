@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pécsi Rózsa Egyesület algaléria-klub foglalkozások - tevékenységünk képekben</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="menu-icon">&#9776;</div>
+      <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="rolunk.html">Rólunk</a>
+        <h1>
+          <div>Pécsi Rózsa </div>
+          <div>Keleti Kultúra és Tánc Egyesület</div>
+        </h1>
+        <a href="galeria.html">Galéria</a>
+        <a href="index.html #kapcsolat">Kapcsolat</a>
+      </nav>
+    </header>
+    <script>
+      $(document).ready(function () {
+    $(".menu-icon").click(function () {
+      $("nav").toggle();
+    });
+  });
+  </script>
+<div class="gallery-container">
+  <img src="img/pecsi-rozsa-klub.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub.jpg">
+  <img src="img/pecsi-rozsa-klub1.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub1.jpg">
+  <img src="img/pecsi-rozsa-klub2.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub2.jpg">
+  <img src="img/pecsi-rozsa-klub3.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub3.jpg">
+  <img src="img/pecsi-rozsa-klub4.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub4.jpg">
+  <img src="img/pecsi-rozsa-klub5.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub5.jpg">
+  <img src="img/pecsi-rozsa-klub6.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub6.jpg">
+  <img src="img/pecsi-rozsa-klub7.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub7.jpg">
+  <img src="img/pecsi-rozsa-klub8.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub8.jpg">
+  <img src="img/pecsi-rozsa-klub9.jpg" alt="Pécsi Rózsa klub foglalkozás" class="gallery-image" data-large="img/pecsi-rozsa-klub9.jpg">
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <img id="modal-image" src="" alt="Nagy méretű kép">
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+  // Kattintás esemény a képekre
+  $('.gallery-image').click(function() {
+    // Nagy kép beállítása és modális ablak megjelenítése
+    $('#modal-image').attr('src', $(this).data('large'));
+    $('#myModal').fadeIn();
+  });
+  // Bezáró gomb és modális háttér kattintás eseménye
+  $('.close, #myModal').click(function() {
+    $('#myModal').fadeOut();
+  });
+  // Megakadályozza a modális kép kattintását, hogy bezárja a modális ablakot
+  $('#modal-image').click(function(event) {
+    event.stopPropagation();
+  });
+});
+</script>
+</body>
+</html>
