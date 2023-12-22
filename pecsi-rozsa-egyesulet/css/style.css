@@ -131,6 +131,14 @@ table {
   ul{
     list-style:square;
   }
+.szoveg{
+  text-align: justify;
+  margin-right:10%;
+  margin-left:10%;
+  padding: 20px;
+  border: 16px solid #BB9CC0;
+  background: #FED9ED;
+}
 .menu-icon {
   display: none;
   cursor: pointer;
