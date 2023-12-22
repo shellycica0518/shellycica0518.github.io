@@ -1,0 +1,40 @@
+1. Írj CSS szelektorokat! Hogyan hivatkozunk:					
+a., egy ID-ra?
+b., egy CLASS-ra?
+c., minden olyan class-ra, ami „col-„ "szóval" kezdődik?
+d., kötelezően kitöltendő INPUT elemekre?
+2. Sorolj fel 5 darab HTML5 szemantikus elemet! Miért használjuk őket?
+3. Hogyan forgathatok el egy divet 100 fokkal?
+4. Mi az a @keyframes?
+5. Hogyan tudok a githubon letörölni egy repository-t?
+
+1. 
+#idneve{
+
+}
+.classneve{
+
+}
+
+
+2.
+section, article, footer, nav, main, header
+
+3.
+@keyframes myAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+4. Ha animációket szeretnénk használni, akkor le kell írni:
+@keyframes animációneve
+
+5. Settings/Delete this repository
+

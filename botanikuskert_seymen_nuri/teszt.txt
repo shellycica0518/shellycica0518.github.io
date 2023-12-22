@@ -1,0 +1,47 @@
+
+2. Az órán kívül egy héten hány órát tudsz a programozásra fordítani?
+3. Részletesen írd le, hogy kell a saját github.io-s címedre felölteni egy repot, ha a user neved prooktatas és a munkamappa C:\Users\Munka elérési útvonalon található!
+4. Miért célszerű index.html-nek elnevezni a kezdőoldalam?
+5. Készíts egy olyan HTML utasítást, amelyben elhelyezel az
+oldalon egy űrlapot a következő mezőkkel:
+a. Név (text, kötelező mező, legyen példa benne)
+b. Telefonszám (text, kötelező mező, legyen példa benne)
+c. Születési idő (dátum mező)
+d. Üzenet (szövegmező 20 sor, 20 oszlop)
+e. Elküld gomb
+
+
+2. Nálam ez nagyon változó. 2 munkahelyen dolgozom. Ha a másodállásomnál van hétvégén renedezvény,akkor nem sok idő marad. Ha nincs rendezvény, akkor hétvégén tudok vele sokat foglalkozni. Hétközben a lyukas óráimban a munkahelyemen is igyekszem ezzel foglalkozni. Minden nap, de minimum 2 naponta 1 vagy 2 órát próbálok ráfordítani. Őszi szünetben rengeteg időm lesz.
+
+3. Pont óra előtt sikerült végre feltöltenem először. Remélem tényleg sikerült. 
+
+cd Users
+cd Munka
+git config --global user.name "prooktatas"
+git clone https://github.com/prooktatas.github.io.git
+
+cd prooktatas.github.io
+code
+git add .
+git commit -m "valami created"
+git push
+
+4. Egyszerűen, könnyen azonosítható, hogy az egy főoldal. Valamint a keresők is könnyebben beazonosítják.
+
+5.       <form>
+        <label for="nev">Név:</label>
+        <input type="text" id="nev" name="nev" required value="Példa Név"><br><br>
+        
+        <label for="telefonszam">Telefonszám:</label>
+        <input type="tel" id="telefonszam" name="telefonszam" required value="123-456-789"><br><br>
+        
+        <label for="szuletesiido">Születési idő:</label>
+        <input type="date" id="szuletesiido" name="szuletesiido"><br><br>
+        
+        <label for="uzenet">Üzenet:</label><br>
+        <textarea id="uzenet" name="uzenet" rows="20" cols="20"></textarea><br><br>
+        
+        <input type="submit" value="Elküld">
+    </form>
+
+
