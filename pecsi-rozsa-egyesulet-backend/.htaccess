@@ -1,0 +1,22 @@
+Options -Indexes
+Options +FollowSymLinks
+#RewriteEngine off
+#RewriteBase 
+
+# Barátságos URL-ek kialakítása
+RewriteRule ^(.*)/(.*)/(.*)/(.+)$ index.php?m1=404 [L,QSA]
+RewriteRule ^(.*)/(.*)/(.*)/$ index.php?m1=$1&m2=$2&m3=$3 [L,QSA]
+RewriteRule ^(.*)/(.*)/(.+)$ index.php?m1=$1&m2=$2&m3=$3 [L,QSA]
+RewriteRule ^(.*)/(.*)/$ index.php?m1=$1&m2=$2 [L,QSA]
+RewriteRule ^(.*)/(.+)$ index.php?m1=$1&m2=$2 [L,QSA]
+RewriteRule ^(.*)/$ index.php?m1=$1 [L,QSA]
+
+#Allow from 10.1.1.0/16
+#Deny from 10.1.1.0/16
+
+RewriteEngine off
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+RewriteCond %{REMOTE_ADDR} !^::1$
+RewriteRule ^admin\.php$ - [F]
+RewriteCond %{REQUEST_URI} !\.(?:css|js)$ [NC]
+RewriteRule ^paymethod/ - [L,F]
