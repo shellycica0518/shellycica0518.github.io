@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
+<header>
+      <div class="menu-icon">&#9776;</div>
+        <nav>
+          <a href="index.php">Főoldal</a>
+          <a href="rolunk.html">Rólunk</a>
+          <h1>
+            <div>Pécsi Rózsa </div>
+            <div>Keleti Kultúra és Tánc Egyesület</div>
+          </h1>
+          <a href="galeria.html">Galéria</a>
+          <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
+      </header>
+      <script>
+        $(document).ready(function () {
+      $(".menu-icon").click(function () {
+        $("nav").toggle();
+      });
+    });
+    </script>
 <main> 
         <div class="egy">
             <h3><video width="100%" height="100%" controls>

@@ -19,8 +19,7 @@ if(isset($_GET['bejelentkezes']))
         }
         else
         {
-          $kimenet = $sor['username'];
-          $kimenet2 = $sor['password'];
+          $kimenet = "Hibás felhasználónév vagy jelszó!";
         }
     }
 }
@@ -40,7 +39,7 @@ if(isset($_GET['bejelentkezes']))
     <header>
       <div class="menu-icon">&#9776;</div>
         <nav>
-          <a href="index.html">Főoldal</a>
+          <a href="index.php">Főoldal</a>
           <a href="rolunk.html">Rólunk</a>
           <h1>
             <div>Pécsi Rózsa </div>
@@ -83,13 +82,12 @@ if(isset($_GET['bejelentkezes']))
                 <label for="jelszo">Jelszó:</label>
                 <input type="password" id="password" name="password" required>
                 <input type="submit" id="bejelentkezes" name="bejelentkezes" values="Bejelentkezés">
-                <!--<button name="bejelentkezes">Bejelentkezés</button>-->
             </form>
             <p><?php if (isset($kimenet)) print $kimenet; ?></p>
             <p><?php if (isset($kimenet)) print $kimenet2; ?></p>
           </div>
           <p>Ha még nincs  fiókod itt regisztrálhatsz:</p>
-            <a href="regisztracio.html" id="reg">Regisztrálok</a>
+            <a href="regisztracio.php" id="reg">Regisztrálok</a>
         </div>
         <div class="ketto">
           <a href="galeria.html" target="_blank"><img src="img/pre-nurgul.jpg" alt="Pécsi Rózsa Egyesület Nurgül"></a>

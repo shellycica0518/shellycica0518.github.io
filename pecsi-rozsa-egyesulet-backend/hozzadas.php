@@ -36,20 +36,6 @@ if (isset($_POST['rendben'])) {
 	
 }
 
-// Űrlap előzetes kitöltése
-/*else {
-	$id = (int)$_GET['id'];
-	$sql = "SELECT *
-			FROM registration
-			WHERE id = {$id}";
-	$eredmeny = mysqli_query($dbc, $sql);
-	$sor = mysqli_fetch_assoc($eredmeny);
-
-	$neve    = $sor['neve'];
-	$rendelesideje = $sor['rendelesideje'];
-	$ara  = $sor['ara'];
-	$osszetetele  = $sor['osszetetele'];
-}*/
 // Űrlap megjelenítése
 ?><!DOCTYPE html>
 <html lang = "hu">
@@ -89,23 +75,5 @@ if (isset($_POST['rendben'])) {
 		<p><a href="admin.php">Vissza a regisztráltakhoz</a></p>
         </form>
           </div>
-		  
-	
-<!--<form method="post" action="">
-	<?php if (isset($kimenet)) print $kimenet; ?>
-    <input type="hidden" id="id" name="id" value="<?php print $id; ?>">
-	<p><label for="neve">Név*:</label><br>
-	<input type="text" id="neve" name="neve" value="<?php if (isset($neve)) print $neve; ?>"></p>
-	<p><label for="rendelesideje">Rendelés ideje*:</label><br>
-	<input type="date" id="rendelesideje" name="rendelesideje" value="<?php if (isset($rendelesideje)) print $rendelesideje; ?>"></p>
-	<p><label for="ara">Ára*:</label><br>
-	<input type="number" id="ara" name="ara" value="<?php if (isset($ara)) print $ara; ?>"></p>
-	<p><label for="osszetetele">Összetétele:</label><br>
-	<input type="text" id="osszetetele" name="osszetetele" value="<?php if (isset($osszetetele)) print $osszetetele; ?>"></p>
-	<p><em>A *-gal jelölt mezők kitöltése kötelező!</em></p>
-	<input type="submit" id="rendben" name="rendben" value="Rendben">
-	<input type="reset" value="Mégse">
-	<p><a href="admin.php">Vissza a Rendelésekhez</a></p>
-</form>-->
 </body>
 </html>
